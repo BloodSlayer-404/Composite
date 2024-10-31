@@ -1,8 +1,10 @@
 package org.example;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
+@NoArgsConstructor
 public class BaseObstacle implements Obstacle{
     private int X;
     private int Y;
@@ -24,8 +26,12 @@ public class BaseObstacle implements Obstacle{
         return texture;
     }
 
+    /**
+     *
+     * @return "The obstacle gets a hit"
+     */
     @Override
     public String getHitted() {
-        return "The obstacle is hit";
+        return "The obstacle gets a hit";
     }
 }
